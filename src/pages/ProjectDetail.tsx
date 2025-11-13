@@ -7,7 +7,7 @@ import { ArrowLeft, MapPin, Calendar, ExternalLink } from "lucide-react";
 import luxury from "@/assets/luxurystaircase.png";
 import jhamko from "@/assets/Jhamko Rajasthan.png";
 import traditionalmodern from "@/assets/traditional-modern.jpeg"
-import office from "@/assets/office.jpg";
+import office from "@/assets/Office.jpg";
 import { Helmet } from "react-helmet";
 
 const ProjectDetail = () => {
