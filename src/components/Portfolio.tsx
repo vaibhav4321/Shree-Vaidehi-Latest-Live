@@ -6,7 +6,7 @@ import { ExternalLink } from "lucide-react";
 
 import luxury from "@/assets/luxurystaircase.png";
 import traditionalmodern from "@/assets/traditional-modern.jpeg";
-import office from "@/assets/office.jpg";
+import office from "@/assets/Office.jpg";
 import jhamko from "@/assets/Jhamko Rajasthan.png";
 interface PortfolioProps {
   limit?: number; // optional limit, like Testimonials
