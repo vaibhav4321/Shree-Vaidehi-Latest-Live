@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Luxe Spaces Design System - Interior & Exterior Design
+All colors MUST be HSL format for consistency.
+*/
+
+@layer base {
+  :root {
+    /* Core brand colors */
+    --background: 35 35% 92%; /* Light beige #E4D8C4 */
+    --foreground: 0 0% 0%; /* Pure black */
+
+    --card: 0 0% 100%; /* Pure white for cards */
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Bangladesh Green primary */
+    --primary: 179 93% 18%; /* #025E5D */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 179 93% 28%;
+
+    /* Elegant beige secondary */
+    --secondary: 35 35% 92%; /* #E4D8C4 */
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 35 20% 88%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Tan accent color */
+    --accent: 253 32% 69%; /* #9883D6 */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 25% 85%;
+    --input: 35 25% 90%;
+    --ring: 179 93% 18%;
+
+    --radius: 0.5rem;
+
+    /* Luxury gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(179 93% 18%), hsl(179 93% 28%));
+    --gradient-elegant: linear-gradient(135deg, hsl(35 35% 92%), hsl(35 25% 88%));
+    --gradient-accent: linear-gradient(135deg, hsl(253 32% 69%), hsl(253 32% 79%));
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(179 93% 18% / 0.3);
+    --shadow-soft: 0 4px 12px -2px hsl(0 0% 0% / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 179 93% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 179 93% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 179 93% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 179 93% 18%;
+
+    --secondary: 179 50% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 179 50% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 253 32% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 179 50% 20%;
+    --input: 179 50% 20%;
+    --ring: 0 0% 100%;
+    --sidebar-background: 179 93% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 253 32% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 179 50% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 179 50% 20%;
+    --sidebar-ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat;
+  }
+
+  h1 {
+    @apply font-georgia font-bold text-5xl;
+  }
+
+  h2 {
+    @apply font-georgia font-bold text-xl;
+  }
+
+  h3 {
+    @apply font-montserrat font-semibold text-lg;
+  }
+
+  .hero-gradient {
+    background: var(--gradient-primary);
+  }
+
+  .elegant-gradient {
+    background: var(--gradient-elegant);
+  }
+
+  .accent-gradient {
+    background: var(--gradient-accent);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .blog-content a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.blog-content a:visited {
+  color: purple;
+}
+
+.blog-content a:hover {
+  color: darkblue;
+}
+
+.blog-image {
+  width: 290px;
+  height: 400px;
+  /* object-fit: cover;  optional: crop/scale without distortion */
+}
+
+}
